@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hubungi Kami — SUBURTANI</title>
+<link rel="stylesheet" href="style.css">
+<style>
+  .form-field{ margin-bottom:18px; }
+  .form-field label{
+    display:block; font-family: var(--mono); font-size:0.78rem;
+    text-transform:uppercase; letter-spacing:0.04em; margin-bottom:6px; color: var(--ink-soft);
+  }
+  .form-field input, .form-field select, .form-field textarea{
+    width:100%; padding:12px 14px; font-family: var(--body); font-size:0.95rem;
+    border:2px solid var(--ink); border-radius: var(--radius); background: var(--kraft);
+  }
+  #form-success{
+    display:none; margin-top:16px; padding:14px 16px; background: var(--leaf-pale);
+    border:2px solid var(--leaf-deep); color: var(--leaf-deep); font-family: var(--mono); font-size:0.85rem;
+  }
+</style>
+</head>
+<body>
+
+<header class="site">
+  <nav class="nav">
+    <a class="logo" href="index.html">
+      <svg class="mark" viewBox="0 0 40 40" fill="none">
+        <circle cx="20" cy="20" r="19" stroke="#23291F" stroke-width="2"/>
+        <path d="M20 30V16" stroke="#4B7A51" stroke-width="2.5" stroke-linecap="round"/>
+        <path d="M20 22C20 22 12 21 12 13C20 13 20 22 20 22Z" fill="#4B7A51"/>
+        <path d="M20 18C20 18 28 17 28 9C20 9 20 18 20 18Z" fill="#C98A3C"/>
+      </svg>
+      SUBURTANI
+    </a>
+    <ul class="nav-links">
+      <li><a href="index.html">Beranda</a></li>
+      <li><a href="produk.html">Produk</a></li>
+      <li><a href="testimoni.html">Testimoni</a></li>
+      <li><a href="tentang-kami.html">Tentang Kami</a></li>
+      <li><a href="hubungi.html" class="active">Hubungi</a></li>
+    </ul>
+    <div class="nav-cta">
+      <button class="nav-toggle">Menu</button>
+      <a href="hubungi.html" class="btn btn-solid">Tempah Sekarang</a>
+    </div>
+  </nav>
+</header>
+
+<section style="padding-bottom:0;">
+  <div class="container">
+    <p class="eyebrow">Tempah / Bertanya</p>
+    <h1 style="max-width:600px;">Bercakap Terus Dengan Kami.</h1>
+    <p style="max-width:520px; font-size:1.05rem;">Isi borang di bawah untuk tempahan pukal, atau hubungi terus
+      melalui WhatsApp untuk respon lebih cepat.</p>
+  </div>
+</section>
+
+<section>
+  <div class="container grid grid-2" style="align-items:start;">
+    <div class="card">
+      <h3>Borang Tempahan</h3>
+      <form id="order-form">
+        <div class="form-field">
+          <label for="nama">Nama Penuh</label>
+          <input type="text" id="nama" required>
+        </div>
+        <div class="form-field">
+          <label for="telefon">Nombor Telefon</label>
+          <input type="tel" id="telefon" required>
+        </div>
+        <div class="form-field">
+          <label for="lokasi">Lokasi Ladang / Kebun</label>
+          <input type="text" id="lokasi" placeholder="Contoh: Sekinchan, Selangor" required>
+        </div>
+        <div class="form-field">
+          <label for="tanaman">Jenis Tanaman</label>
+          <select id="tanaman">
+            <option>Sayur-sayuran</option>
+            <option>Buah-buahan</option>
+            <option>Sawit &amp; Getah</option>
+            <option>Padi</option>
+            <option>Lain-lain</option>
+          </select>
+        </div>
+        <div class="form-field">
+          <label for="kuantiti">Kuantiti Dikehendaki (kg)</label>
+          <input type="number" id="kuantiti" placeholder="Contoh: 100">
+        </div>
+        <div class="form-field">
+          <label for="mesej">Mesej Tambahan</label>
+          <textarea id="mesej" rows="3"></textarea>
+        </div>
+        <button type="submit" class="btn btn-solid">Hantar Tempahan</button>
+        <div id="form-success">✓ Terima kasih! Kami akan hubungi anda dalam masa 24 jam.</div>
+      </form>
+    </div>
+
+    <div>
+      <div class="card" style="margin-bottom:24px;">
+        <h3>WhatsApp</h3>
+        <p>Respon paling pantas — hantar nama, lokasi dan kuantiti dikehendaki.</p>
+        <a href="https://wa.me/60112345678" class="btn btn-outline">Buka WhatsApp</a>
+      </div>
+      <div class="card">
+        <h3>Pejabat &amp; Stor</h3>
+        <p>Lot 12, Jalan Ladang Subur,<br>Bandar Baru Bangi, Selangor.</p>
+        <p style="font-family:var(--mono); font-size:0.85rem;">Isnin – Sabtu, 9:00 pagi – 6:00 petang</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section style="padding-top:0;">
+  <div class="container">
+    <div class="section-head">
+      <p class="eyebrow">Soalan Lazim</p>
+      <h2>Sebelum tempah, semak dahulu.</h2>
+    </div>
+    <div class="accordion">
+      <div class="accordion-item open">
+        <button class="accordion-q">Adakah SUBURTANI benar-benar 100% tiada kimia? <span class="accordion-icon">+</span></button>
+        <div class="accordion-a"><p>Ya. Semua bahan adalah organik — kompos, baja ternakan terfermentasi, mikroorganisma tanah dan mineral semula jadi. Tiada bahan sintetik ditambah pada mana-mana peringkat.</p></div>
+      </div>
+      <div class="accordion-item">
+        <button class="accordion-q">Berapa lama tempoh penghantaran? <span class="accordion-icon">+</span></button>
+        <div class="accordion-a"><p>Untuk kawasan Semenanjung Malaysia, tempahan pukal biasanya sampai dalam 3–5 hari bekerja selepas pembayaran disahkan.</p></div>
+      </div>
+      <div class="accordion-item">
+        <button class="accordion-q">Bolehkah dicampur dengan baja sedia ada saya? <span class="accordion-icon">+</span></button>
+        <div class="accordion-a"><p>Boleh, tetapi digalakkan kurangkan baja kimia secara berperingkat supaya mikroorganisma dalam SUBURTANI dapat berfungsi optimum.</p></div>
+      </div>
+      <div class="accordion-item">
+        <button class="accordion-q">Adakah sesuai untuk semua jenis tanaman? <span class="accordion-icon">+</span></button>
+        <div class="accordion-a"><p>Ya — SUBURTANI telah diuji pada padi, sayur-sayuran, buah-buahan serta sawit dan getah dengan kadar aplikasi yang berbeza mengikut jenis tanaman.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="site">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <h4>SUBURTANI</h4>
+        <p style="color:var(--leaf-pale); max-width:260px;">Baja 100% semula jadi, tiada kimia. Dibuat untuk petani yang mahu tanah subur bertahan lama.</p>
+      </div>
+      <div>
+        <h4>Tapak</h4>
+        <ul>
+          <li><a href="index.html">Beranda</a></li>
+          <li><a href="produk.html">Produk</a></li>
+          <li><a href="testimoni.html">Testimoni</a></li>
+          <li><a href="tentang-kami.html">Tentang Kami</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Bantuan</h4>
+        <ul>
+          <li><a href="hubungi.html">Hubungi Kami</a></li>
+          <li><a href="hubungi.html">Soalan Lazim</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Hubungi</h4>
+        <ul>
+          <li>WhatsApp: 011-2345 6789</li>
+          <li>hello@suburtani.my</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 SUBURTANI. Hak cipta terpelihara.</span>
+      <span>Laman demo — testimoni untuk tujuan ilustrasi.</span>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
